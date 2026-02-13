@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Feed wrapper */
+.feed-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Feed post */
+.feed-post {
+  width: 100%;
+  max-width: 470px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+/* Reel responsive */
+.reel-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 125%;
+}
+
+.reel-wrapper iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Caption */
+.caption {
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* ---------- DESKTOP ---------- */
+@media (min-width: 992px) {
+  .feed-container {
+    margin-left: 240px; /* sidebar space */
+  }
+}
+
+/* ---------- TABLET ---------- */
+@media (min-width: 601px) and (max-width: 991px) {
+  .feed-post {
+    max-width: 420px;
+  }
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 600px) {
+  .feed-container {
+    padding: 0;
+  }
+
+  .feed-post {
+    border: none;
+    max-width: 100%;
+  }
+}

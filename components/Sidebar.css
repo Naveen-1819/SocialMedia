@@ -1,0 +1,48 @@
+/* Hide sidebar by default (mobile & tablet) */
+.ig-sidebar {
+  display: none;
+}
+
+/* Desktop only */
+@media (min-width: 992px) {
+  .ig-sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    height: 100vh;
+    padding: 20px 12px;
+    background: #000;
+    border-right: 1px solid #262626;
+    position: fixed;
+    left: 0;
+    top: 0;
+    color: white;
+  }
+
+  .logo {
+    font-family: cursive;
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-item {
+    padding: 10px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .nav-item:hover {
+    background: #121212;
+  }
+
+  .sidebar-footer {
+    margin-top: auto;
+    padding: 10px 12px;
+  }
+}

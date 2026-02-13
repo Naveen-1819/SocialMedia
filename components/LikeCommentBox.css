@@ -1,0 +1,42 @@
+.like-comment-box {
+  padding: 10px;
+}
+
+.actions {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.likes-count {
+  font-weight: 600;
+  margin: 6px 0;
+}
+
+.comments {
+  margin-bottom: 6px;
+}
+
+.comment {
+  font-size: 14px;
+  margin: 2px 0;
+}
+
+.comment-form {
+  display: flex;
+  gap: 8px;
+}
+
+.comment-form input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 8px;
+}
+
+.comment-form button {
+  border: none;
+  background: none;
+  color: #0095f6;
+  font-weight: bold;
+  cursor: pointer;
+}
